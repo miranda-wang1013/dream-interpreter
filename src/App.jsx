@@ -7,7 +7,8 @@ export default function App() {
     const [imageUrl, setImageUrl] = React.useState('');
     const [gptResponse, setGptResponse] = React.useState('');
     const [savedItems, setSavedItems] = React.useState([]);
-    const API_KEY = import.meta.env.VITE_OPENAI_API_KEY;
+    // const API_KEY = import.meta.env.VITE_OPENAI_API_KEY;
+    const API_KEY = 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
 
     React.useEffect(() => {
         const loadedItems = localStorage.getItem('savedItems');

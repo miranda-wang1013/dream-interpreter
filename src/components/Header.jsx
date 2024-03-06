@@ -8,7 +8,7 @@ export default function Header() {
                 className="header--image"
             />
             <h2 className="header--title">Dream Interpretation</h2>
-            <h4 className="header--project">Find the hidden message and draw it out</h4>
+            <h4 className="header--project">Unlock the hidden truths within your dream</h4>
         </header>
     )
 }
