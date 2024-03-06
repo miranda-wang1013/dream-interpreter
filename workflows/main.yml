@@ -1,0 +1,14 @@
+name: Example Workflow
+on: [push]
+
+jobs:
+  example_job:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v2
+      - name: Use OpenAI API Key
+        run: |
+          echo "Using OpenAI API Key: ${{ secrets.VITE_OPENAI_API_KEY }}"
+        env:
+          OPENAI_API_KEY: ${{ secrets.VITE_OPENAI_API_KEY }}
