@@ -22,7 +22,7 @@ export default function App() {
     const options = {
         method: 'POST',
         headers: {
-            Authorization: `Bearer ${API_KEY}`,
+            Authorization: `Bearer ${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}`,
             'Content-Type': 'application/json',
         },
         body: JSON.stringify({
