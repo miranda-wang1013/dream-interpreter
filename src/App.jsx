@@ -7,8 +7,7 @@ export default function App() {
     const [imageUrl, setImageUrl] = React.useState('');
     const [gptResponse, setGptResponse] = React.useState('');
     const [savedItems, setSavedItems] = React.useState([]);
-    // const API_KEY = import.meta.env.VITE_OPENAI_API_KEY;
-    const API_KEY = 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
+    const API_KEY = import.meta.env.VITE_OPENAI_API_KEY;
 
     React.useEffect(() => {
         const loadedItems = localStorage.getItem('savedItems');
@@ -22,7 +21,7 @@ export default function App() {
     const options = {
         method: 'POST',
         headers: {
-            Authorization: `Bearer ${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}`,
+            Authorization: `Bearer ${API_KEY}`,
             'Content-Type': 'application/json',
         },
         body: JSON.stringify({
